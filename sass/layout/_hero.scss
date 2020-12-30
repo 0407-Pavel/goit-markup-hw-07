@@ -45,45 +45,31 @@ height: 120px;
     justify-content: center;
     margin-bottom: 30px;
 }
-.border_focus:hover,
-.border_focus:focus {
-    display: block;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .first_line,
 .second_line,
 .third_line {
  margin-right: 30px;  
 }
-.first_line:hover, 
-.first_line:focus {
-    border: 1px solid #EEEEEE;
-box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-cursor: pointer;
-} 
-.second_line:hover, 
-.second_line:focus {
-    border: 1px solid #EEEEEE;
-box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-cursor: pointer;
-} 
-.third_line:hover, 
-.third_line:focus {
-    border: 1px solid #EEEEEE;
-box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-cursor: pointer;
-} 
-.first_line,
-.border_line_two,
-.third_line {
-border: 1px solid #EEEEEE;
-box-sizing: border-box;
+.border_focus:focus {
+    display: block;
+    border: 0px solid #EEEEEE;
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.first_line:hover {
+    border: 0px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
+} 
+.second_line:hover {
+    border: 0px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
+} 
+.third_line:hover {
+    border: 0px solid #EEEEEE;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
+} 
 .line_three {
     margin-bottom: 94px;
 }
@@ -124,7 +110,9 @@ box-sizing: border-box;
     transform: translateY(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.first_line:hover .edit_actions {
+.first_line:hover .edit_actions,
+.second_line:hover .edit_actions,
+.third_line:hover .edit_actions {
     transform: translateY(0);
 }
 .edit_actions {

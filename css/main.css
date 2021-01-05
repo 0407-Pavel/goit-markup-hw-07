@@ -290,6 +290,7 @@ img {
 .second_line,
 .third_line {
   margin-right: 30px;
+  border: 1px solid #EEEEEE;
 }
 
 .border_focus:focus {
